@@ -25,7 +25,7 @@ h1,h2,h3,h4,h5,h6,em,strong,b{font-weight:bold;}
 del,ins,u,s,a,a:hover{text-decoration:none;}
 body,textarea,input,button,select,keygen,legend{
 color:#333;outline:0; font-family: Arial, Helvetica, sans-serif;}
-body{background:#fff;}
+body{background:#ededed;}
 a,a:hover{color:#333;}
 img{display: block;}
 
@@ -37,9 +37,10 @@ img{display: block;}
 // color:map-get($colors, 'home' )
 
 .bjimg{
-  background: url("../images/index.png") no-repeat center;
+  background: url("../images/index.png") no-repeat 0 0;
   // 图片大小 原图为750px*910 先调整为375*455
   background-size:26.785714rem 32.5rem;
+  display: block;
 }
 
 // scss
@@ -48,6 +49,7 @@ $color-fff:#fff;
 $color-000:#000;
 $color-f00:red;
 $color-666:#666;
+$color-f9f9f9:#f9f9f9;
 
 // $colors  颜色背景
 $colors:(
@@ -56,6 +58,7 @@ $colors:(
   "000":$color-000,
   "f00":$color-f00,
   "666":$color-666,
+  "f9f9f9":$color-f9f9f9,
 );
 @each $colorKey,$color in $colors {
     .color-#{$colorKey}{

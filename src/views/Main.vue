@@ -13,10 +13,10 @@
     </div>
     <div class="nav bg-home">
       <ul class="f flex-dqx-jg">
-        <li><router-link to="/"  class="active">首页</router-link></li>
-        <li><router-link to="攻略">攻略</router-link></li>
-        <li><router-link to="赛事中心">赛事中心</router-link></li>
-        <li><router-link to="IP新游">IP新游</router-link></li>
+        <li><router-link to="/home"  class="active">首页</router-link></li>
+        <li><router-link to="">攻略</router-link></li>
+        <li><router-link to="">赛事中心</router-link></li>
+        <li><router-link to="">IP新游</router-link></li>
       </ul>
     </div>
     <router-view></router-view>
@@ -39,14 +39,12 @@ export default {
     .logo_img{
       width: 2.142857rem;
       height: 2.142857rem;
-      display: block;
       background-position:0 -22.071429rem;
     }
     .download {
       a{
         width: 4.285714rem;
         height: 1.714286rem;
-        display: block;
         background-position:-4.214286rem -22.071429rem;
       }
     }
